@@ -68,7 +68,7 @@
                 <a href="#faq" class="hover:text-brand-600 transition">Dúvidas Frequentes</a>
             </nav>
             <div>
-                <a href="https://wa.me/5521972593666?text=Olá,%20Danielle!%20Gostaria%20de%20uma%20cotação%20de%20plano%20de%20saúde."
+                <a href="https://wa.me/5521998665854?text=Olá,%20Danielle!%20Gostaria%20de%20uma%20cotação%20de%20plano%20de%20saúde."
                     target="_blank" rel="noopener noreferrer"
                     class="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-4 py-2.5 rounded-lg shadow-sm transition flex items-center space-x-2 text-sm">
                     <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -414,7 +414,7 @@
     </footer>
 
     <!-- 8. Elemento Flutuante (WhatsApp) -->
-    <a href="https://wa.me/5521972593666?text=Olá,%20Danielle!%20Gostaria%20de%20uma%20cotação%20de%20plano%20de%20saúde."
+    <a href="https://wa.me/5521998665854?text=Olá,%20Danielle!%20Gostaria%20de%20uma%20cotação%20de%20plano%20de%20saúde."
         target="_blank" rel="noopener noreferrer" aria-label="Fale com a Danielle no WhatsApp"
         class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 animate-pulse">
         <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
@@ -433,7 +433,7 @@
             icon.classList.toggle('rotate-180');
         }
 
-        // Validação e Envio do Formulário para WhatsApp
+        // Validação e Envio do Formulário para WhatsApp com o novo número
         function handleFormSubmit(event) {
             event.preventDefault();
 
@@ -449,7 +449,7 @@
 
             feedback.classList.remove('hidden');
 
-            const numeroWhatsApp = "5521972593666";
+            const numeroWhatsApp = "5521998665854";
             const texto = `Olá, Danielle! Meu nome é *${nome}*, meu telefone é ${telefone} e tenho interesse em cotação para: *${tipoPlano}*.`;
             const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
 
