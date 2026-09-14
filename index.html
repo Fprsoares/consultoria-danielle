@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Consultoria especializada em planos de saúde com Danielle Barbosa. Cotação personalizada para planos PF, CNPJ e Adesão.">
+    <title>Danielle Barbosa | Consultoria em Planos de Saúde</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fdf2f4',
+                            100: '#fce7eb',
+                            500: '#e11d48', // Rosé sofisticado
+                            600: '#be123c',
+                            700: '#9f1239',
+                            900: '#881337',
+                        },
+                        navy: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Garante respiro perfeito ao navegar pelas âncoras considerando o menu fixo */
+        html {
+            scroll-padding-top: 5rem;
+        }
+
+        #leadForm {
+            scroll-margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- 1. Header / Navegação -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <span class="text-lg sm:text-xl font-bold text-navy-900 tracking-tight">Danielle Barbosa</span>
+                <span
+                    class="hidden sm:inline-block text-xs bg-brand-50 text-brand-600 px-2 py-0.5 rounded font-medium border border-brand-100">Planos
+                    de Saúde</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="#beneficios" class="hover:text-brand-600 transition">Diferenciais</a>
+                <a href="#publico" class="hover:text-brand-600 transition">Para Quem É</a>
+                <a href="#depoimentos" class="hover:text-brand-600 transition">Depoimentos</a>
+                <a href="#faq" class="hover:text-brand-600 transition">Dúvidas Frequentes</a>
+            </nav>
+            <div>
+                <a href="https://wa.me/5521972593666?text=Olá,%20Danielle!%20Gostaria%20de%20uma%20cotação%20de%20plano%20de%20saúde."
+                    target="_blank" rel="noopener noreferrer"
+                    class="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-4 py-2.5 rounded-lg shadow-sm transition flex items-center space-x-2 text-sm">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path
+                            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                    </svg>
+                    <span>Falar com a Danielle</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Seção Hero (Principal) -->
+    <section
+        class="relative bg-gradient-to-br from-navy-900 via-slate-900 to-brand-900 text-white py-16 lg:py-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+            <!-- Coluna Esquerda: Texto + Foto Circular Perfeita -->
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left flex flex-col items-center lg:items-start">
+                <span
+                    class="inline-block bg-brand-500/20 text-brand-300 border border-brand-500/30 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+                    🌸 Consultoria Especializada
+                </span>
+
+                <!-- FOTO CIRCULAR PERFEITA -->
+                <div class="my-2">
+                    <div
+                        class="w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden border-4 border-brand-500 shadow-2xl mx-auto lg:mx-0 bg-slate-800">
+                        <img src="sua-foto.jpg" alt="Danielle Barbosa - Consultora de Planos de Saúde"
+                            class="w-full h-full object-cover object-top"
+                            onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80'">
+                    </div>
+                </div>
+
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+                    Encontre o plano de saúde ideal para você, sua família ou empresa.
+                </h1>
+                <p class="text-lg text-slate-300 max-w-xl mx-auto lg:mx-0">
+                    Atendimento qualificado e personalizado. Compare as melhores operadoras do mercado com quem entende
+                    do assunto.
+                </p>
+
+                <div class="space-y-1 text-center lg:text-left">
+                    <h3 class="text-xl font-bold text-white">Danielle Barbosa</h3>
+                    <p class="text-xs text-brand-400 font-semibold uppercase tracking-wider">Especialista em Planos de
+                        Saúde</p>
+                    <div
+                        class="flex items-center justify-center lg:justify-start space-x-1 pt-1 text-amber-400 text-sm">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        <span class="text-xs text-slate-300 ml-1 font-medium">Atendimento 5 Estrelas</span>
+                    </div>
+                </div>
+
+                <div class="pt-2 flex flex-wrap justify-center lg:justify-start gap-4 text-sm text-slate-300">
+                    <div class="flex items-center space-x-1.5">
+                        <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Cotação Gratuita</span>
+                    </div>
+                    <div class="flex items-center space-x-1.5">
+                        <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Planos PF, CNPJ e Adesão</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coluna Direita: Formulário de Captura -->
+            <div id="leadForm"
+                class="lg:col-span-5 bg-white text-slate-800 p-6 sm:p-8 rounded-2xl shadow-2xl border border-slate-100">
+                <div class="mb-6 pb-4 border-b border-slate-100">
+                    <h3 class="text-xl font-bold text-navy-900">Solicite sua Cotação</h3>
+                    <p class="text-xs text-slate-500 mt-1">Preencha abaixo para receber uma análise personalizada via
+                        WhatsApp.</p>
+                </div>
+
+                <form id="leadFormElement" class="space-y-4" onsubmit="handleFormSubmit(event)">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Seu Nome</label>
+                        <input type="text" id="nome" required placeholder="Ex: Maria Silva"
+                            class="w-full px-4 py-3 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">WhatsApp /
+                            Telefone</label>
+                        <input type="tel" id="telefone" inputmode="numeric" required placeholder="(21) 90000-0000"
+                            class="w-full px-4 py-3 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Tipo de Plano</label>
+                        <select id="tipoPlano"
+                            class="w-full px-4 py-3 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 bg-white transition">
+                            <option value="Plano por CNPJ (Empresarial/MEI)">Plano por CNPJ (Empresarial / MEI)</option>
+                            <option value="Plano Individual / Familiar">Plano Individual / Familiar</option>
+                            <option value="Plano por Adesão">Plano por Adesão</option>
+                        </select>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-brand-600 hover:bg-brand-700 text-white font-semibold py-3.5 px-4 rounded-lg shadow-md transition duration-200 text-sm tracking-wide">
+                        Solicitar Cotação Gratuita
+                    </button>
+                    <p id="formFeedback" class="text-xs text-center text-emerald-600 font-medium hidden">Redirecionando
+                        para o WhatsApp da Danielle...</p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Barra de Operadoras (Autoridade) -->
+    <section class="bg-white py-8 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4">Trabalhamos com as principais
+                operadoras do mercado</p>
+            <div
+                class="flex flex-wrap justify-center items-center gap-8 sm:gap-16 opacity-70 grayscale hover:grayscale-0 transition duration-300">
+                <span class="font-extrabold text-lg text-slate-600 tracking-tighter">AMIL</span>
+                <span class="font-extrabold text-lg text-slate-600 tracking-tighter">BRADESCO SAÚDE</span>
+                <span class="font-extrabold text-lg text-slate-600 tracking-tighter">SULAMÉRICA</span>
+                <span class="font-extrabold text-lg text-slate-600 tracking-tighter">NOTRE DAME INTERMÉDICA</span>
+                <span class="font-extrabold text-lg text-slate-600 tracking-tighter">PORTO SAÚDE</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Seção de Benefícios / Diferenciais -->
+    <section id="beneficios" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 tracking-tight">Por que cotar com a Danielle
+                    Barbosa?</h2>
+                <p class="mt-3 text-slate-600">Muito mais do que vender um plano, nosso objetivo é garantir segurança e
+                    economia real para o seu bolso.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition">
+                    <div
+                        class="w-12 h-12 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center font-bold mb-6 text-xl">
+                        📉
+                    </div>
+                    <h3 class="text-lg font-bold text-navy-900 mb-2">Melhor Custo-Benefício</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Encontramos o plano ideal para o seu orçamento,
+                        seja para contratação nova ou estudo de portabilidade.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition">
+                    <div
+                        class="w-12 h-12 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center font-bold mb-6 text-xl">
+                        🎯
+                    </div>
+                    <h3 class="text-lg font-bold text-navy-900 mb-2">Atendimento Qualificado</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Suporte consultivo completo para entender
+                        hospitais de sua preferência, coparticipação e rede de atendimento.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition">
+                    <div
+                        class="w-12 h-12 bg-brand-50 text-brand-600 rounded-xl flex items-center justify-center font-bold mb-6 text-xl">
+                        🤝
+                    </div>
+                    <h3 class="text-lg font-bold text-navy-900 mb-2">Acompanhamento Pós-Venda</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Auxílio direto com dúvidas sobre boletos,
+                        carteirinha digital, carências e processos de portabilidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Seção "Para quem é?" -->
+    <section id="publico" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 tracking-tight">Soluções completas para cada
+                    perfil</h2>
+                <p class="mt-3 text-slate-600">Trabalhamos com todas as modalidades regulamentadas pela ANS.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="bg-slate-50 p-6 rounded-xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-brand-600 uppercase tracking-wider">Mais Econômico</span>
+                        <h3 class="text-lg font-bold text-navy-900 mt-1 mb-2">Planos por CNPJ (PME / MEI)</h3>
+                        <p class="text-sm text-slate-600 mb-4">Condições especiais e valores muito mais acessíveis para
+                            empresas de todos os portes e microempreendedores individuais.</p>
+                    </div>
+                    <a href="#leadForm" class="text-brand-600 text-sm font-semibold hover:underline">Quero uma cotação
+                        &rarr;</a>
+                </div>
+                <!-- Item 2 -->
+                <div class="bg-slate-50 p-6 rounded-xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-brand-600 uppercase tracking-wider">Proteção Total</span>
+                        <h3 class="text-lg font-bold text-navy-900 mt-1 mb-2">Pessoa Física / Familiar</h3>
+                        <p class="text-sm text-slate-600 mb-4">Garanta o atendimento médico de qualidade para você e
+                            para quem você mais ama com mensalidades sob medida.</p>
+                    </div>
+                    <a href="#leadForm" class="text-brand-600 text-sm font-semibold hover:underline">Quero uma cotação
+                        &rarr;</a>
+                </div>
+                <!-- Item 3 -->
+                <div class="bg-slate-50 p-6 rounded-xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-brand-600 uppercase tracking-wider">Exclusivo</span>
+                        <h3 class="text-lg font-bold text-navy-900 mt-1 mb-2">Planos por Adesão</h3>
+                        <p class="text-sm text-slate-600 mb-4">Opções voltadas para estudantes, profissionais liberais e
+                            servidores públicos através de entidades de classe.</p>
+                    </div>
+                    <a href="#leadForm" class="text-brand-600 text-sm font-semibold hover:underline">Quero uma cotação
+                        &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Seção de Depoimentos / Prova Social -->
+    <section id="depoimentos" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 tracking-tight">O que dizem nossos clientes</h2>
+                <p class="mt-3 text-slate-600">Histórias reais de quem economizou e encontrou tranquilidade.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Depoimento 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <p class="text-slate-600 text-sm italic mb-4">"A Danielle fez uma análise excelente do meu caso.
+                        Consegui migrar de plano sem perder carência e reduzi significativamente o valor que pagava todo
+                        mês. Atendimento impecável!"</p>
+                    <div class="flex items-center space-x-3">
+                        <div
+                            class="w-10 h-10 bg-brand-100 text-brand-700 rounded-full flex items-center font-bold justify-center text-sm">
+                            RA</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-navy-900">Renata Almeida</h4>
+                            <p class="text-xs text-slate-500">Plano Familiar</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Depoimento 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <p class="text-slate-600 text-sm italic mb-4">"Contratar o plano empresarial pelo meu MEI parecia
+                        complicado, mas a Danielle resolveu toda a burocracia com muita rapidez e clareza. Super
+                        recomendo o trabalho dela."</p>
+                    <div class="flex items-center space-x-3">
+                        <div
+                            class="w-10 h-10 bg-brand-100 text-brand-700 rounded-full flex items-center font-bold justify-center text-sm">
+                            PR</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-navy-900">Paulo Roberto</h4>
+                            <p class="text-xs text-slate-500">Empresário / MEI</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Seção FAQ (Perguntas Frequentes) -->
+    <section id="faq" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl sm:text-3xl font-bold text-navy-900 tracking-tight">Dúvidas Frequentes</h2>
+                <p class="mt-3 text-slate-600">Esclareça suas principais dúvidas sobre contratação e portabilidade.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item -->
+                <div class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full px-6 py-4 text-left font-semibold text-navy-900 flex justify-between items-center focus:outline-none">
+                        <span>Como funciona a portabilidade de carência?</span>
+                        <svg class="w-5 h-5 text-slate-500 transform transition-transform duration-200" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="hidden px-6 pb-4 text-sm text-slate-600 leading-relaxed">
+                        A portabilidade permite que você mude de operadora de plano de saúde sem precisar cumprir novos
+                        períodos de carência, desde que atenda aos critérios regulamentados pela ANS. Nós fazemos essa
+                        verificação completa e gratuita para você!
+                    </div>
+                </div>
+                <!-- FAQ Item -->
+                <div class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full px-6 py-4 text-left font-semibold text-navy-900 flex justify-between items-center focus:outline-none">
+                        <span>Posso contratar plano empresarial sendo MEI?</span>
+                        <svg class="w-5 h-5 text-slate-500 transform transition-transform duration-200" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="hidden px-6 pb-4 text-sm text-slate-600 leading-relaxed">
+                        Sim! O MEI (Microempreendedor Individual) tem direito a contratar planos de saúde na modalidade
+                        empresarial, que costumam ser até 30% mais baratos que os planos individuais tradicionais.
+                    </div>
+                </div>
+                <!-- FAQ Item -->
+                <div class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full px-6 py-4 text-left font-semibold text-navy-900 flex justify-between items-center focus:outline-none">
+                        <span>Existe algum custo para fazer a cotação com a consultoria?</span>
+                        <svg class="w-5 h-5 text-slate-500 transform transition-transform duration-200" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="hidden px-6 pb-4 text-sm text-slate-600 leading-relaxed">
+                        Nenhum! Todo o serviço de cotação, estudo comparativo e consultoria é 100% gratuito para você.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Rodapé (Footer) -->
+    <footer class="bg-navy-900 text-slate-400 py-12 border-t border-slate-800">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div>
+                <span class="text-white font-bold text-lg">Danielle Barbosa</span>
+                <p class="text-xs text-slate-500 mt-1">Consultoria Especializada em Planos de Saúde.</p>
+                <p class="text-xs text-brand-400 mt-1">E-mail: daniellebarbosacorretora@gmail.com</p>
+            </div>
+            <div class="text-xs text-slate-500 max-w-md">
+                * As informações contidas nesta página são para fins informativos. As condições de contratação,
+                carências e preços estão sujeitos às regras vigentes de cada operadora e da ANS.
+            </div>
+            <div class="text-xs text-slate-400">
+                &copy; 2026 Danielle Barbosa. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- 8. Elemento Flutuante (WhatsApp) -->
+    <a href="https://wa.me/5521972593666?text=Olá,%20Danielle!%20Gostaria%20de%20uma%20cotação%20de%20plano%20de%20saúde."
+        target="_blank" rel="noopener noreferrer" aria-label="Fale com a Danielle no WhatsApp"
+        class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 animate-pulse">
+        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+            <path
+                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+        </svg>
+    </a>
+
+    <!-- JavaScript para Interatividade -->
+    <script>
+        // Função do Acordeão FAQ
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('svg');
+            content.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+
+        // Validação e Envio do Formulário para WhatsApp
+        function handleFormSubmit(event) {
+            event.preventDefault();
+
+            const nome = document.getElementById('nome').value.trim();
+            const telefone = document.getElementById('telefone').value.trim();
+            const tipoPlano = document.getElementById('tipoPlano').value;
+            const feedback = document.getElementById('formFeedback');
+
+            if (!nome || !telefone) {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+                return;
+            }
+
+            feedback.classList.remove('hidden');
+
+            const numeroWhatsApp = "5521972593666";
+            const texto = `Olá, Danielle! Meu nome é *${nome}*, meu telefone é ${telefone} e tenho interesse em cotação para: *${tipoPlano}*.`;
+            const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
+
+            setTimeout(() => {
+                window.open(urlWhatsApp, '_blank');
+                feedback.classList.add('hidden');
+                document.getElementById('leadFormElement').reset();
+            }, 1000);
+        }
+    </script>
+</body>
+
+</html>
