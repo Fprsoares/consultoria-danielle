@@ -1,0 +1,28 @@
+{
+  "name": "consultoria-danielle",
+  "version": "1.0.0",
+  "description": "Consultoria especializada em planos de saúde com Danielle Barbosa",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fprsoares/consultoria-danielle.git"
+  },
+  "keywords": [
+    "consultoria",
+    "planos-de-saude",
+    "health-insurance"
+  ],
+  "author": "Danielle Barbosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fprsoares/consultoria-danielle/issues"
+  },
+  "homepage": "https://github.com/Fprsoares/consultoria-danielle#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
